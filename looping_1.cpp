@@ -10,6 +10,19 @@ int main() {
 		}
 		printf("\n");
 	}
+
+	puts("");
+	puts("===========");
+	puts("");
+
+	for (a=1; a<=6; a++) {
+		for (b=1; b<=6; b++) {
+			if ((a==3  || a==4) && (b ==3 || b==4)) printf("- ");
+			else if (a%2==0 && b%2==0 || a%2==1 && b%2==1) printf("O ");
+			else printf("X ");
+		}
+		printf("\n");
+	}
 }
 
 /* output will be :
